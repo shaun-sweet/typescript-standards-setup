@@ -14,40 +14,46 @@ Do not use an interface for initialState.  Always *infer* the type data from a v
 ```tsx
 import React from 'react';
 
-type OwnProps = {
-  label: string;
-};
-
-type initialState = {
-  count: number;
-};
-
-export class ClassCounter extends React.Component<OwnProps, initialState> {
-  state = { count: 0 };
-
-  handleIncrement = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
-
-  render() {
-    const { handleIncrement } = this;
-    const { label } = this.props;
-    const { count } = this.state;
-
-    return (
-      <div>
-        <span>
-          {label}: {count}
-        </span>
-        <button type="button" onClick={handleIncrement}>
-          {'Increment'}
-        </button>
-      </div>
-    );
-  }
+interface NameProviderProps { 
+  children: (state: NameProviderState) => React.ReactNode; 
 }
 
+interface NameProviderState { // < no need to declare a state shape
+ //when you can just declare the value and infer the type from the value
+  readonly name: string; // << no need for read only, that comes from the react types inherently
+}
+
+export class NameProvider extends React.Component<NameProviderProps, NameProviderState> {
+  readonly state: NameProviderState = { name: 'Piotr' };
+
+  render() {
+    return this.props.children(this.state);
+  }
+}
 ```
+
+Lets pick this apart a bit.
+
+```tsx
+interface NameProviderProps { 
+  children: (state: NameProviderState) => React.ReactNode; 
+}
+```
+- interface usage.  
+- stick to a similar naming convention "OwnProps" across our components
+
+> TODO: Lets get consensus on this? maybe we will run into issues where this won't be beneficial
+
+
+```tsx
+interface NameProviderState { 
+  readonly name: string; 
+}
+```
+- no need to declare a state shape
+- you can just declare the value and infer the type from the value
+- no need for read only, that comes from the react types inherently
+
 </details>
 
 #### Good
@@ -56,35 +62,18 @@ export class ClassCounter extends React.Component<OwnProps, initialState> {
 import React from 'react';
 
 type OwnProps = {
-  label: string;
-};
+  children: (state: typeof initialState) => React.ReactNode;
+}
 
 const initialState = {
-  count: 0
-};
+  name: "Ernie"
+}
 
-export class ClassCounter extends React.Component<OwnProps, typeof initialState> {
+export class NameProvider extends React.Component<OwnProps, typeof initialState> {
   state = initialState;
 
-  handleIncrement = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
-
   render() {
-    const { handleIncrement } = this;
-    const { label } = this.props;
-    const { count } = this.state;
-
-    return (
-      <div>
-        <span>
-          {label}: {count}
-        </span>
-        <button type="button" onClick={handleIncrement}>
-          {'Increment'}
-        </button>
-      </div>
-    );
+    return this.props.children(this.state);
   }
 }
 ```

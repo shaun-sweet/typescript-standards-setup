@@ -16,7 +16,7 @@ If type inference can be used, do not use an interface. This creates a better de
 ```tsx
 import React from 'react';
 
-interface OwnProps  {
+interface OwnProps  { // << Avoid interfaces
   message: string
 };
 
@@ -62,7 +62,7 @@ type OwnProps = {
   label: string;
 };
 
-type initialState = {
+type initialState = { // <<<<< bad
   count: number;
 };
 
@@ -132,4 +132,6 @@ export class ClassCounter extends React.Component<OwnProps, typeof initialState>
   }
 }
 ```
+
+
 
