@@ -1,0 +1,11 @@
+{
+  "docs": {
+    "Typscript Standards": ["overview"],
+    "Getting Started": ["setup-and-configuration", "overriding-styled-components-theme", "react-components"],
+    "Advanced React Patterns": ["render-prop", "higher-order-components"],
+    "Redux Type Saftey": ["configure-store", "reducers", "redux-actions", "selectors", "react-redux-in-component"]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}
