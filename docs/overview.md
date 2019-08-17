@@ -23,4 +23,4 @@ The idea for Typescript useage within the React ecosystem is simple.  *Prefer ty
 Ok, we'll trust you're convinced!  Lets continue...
 
 
-> TODO: Add pros and cons and what it buys and affords you
+> TODO: Add pros and cons and what it buys and affords you compared to not using
