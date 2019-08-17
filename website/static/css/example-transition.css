@@ -1,0 +1,49 @@
+@keyframes invisiblyGrowFontSize {
+	0% {
+    font-size: 0;
+    opacity: 0;
+	}
+	100% {
+    font-size: 1em;
+    opacity: 0;
+	}
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+	100% {
+		opacity: 1;
+	}
+}
+
+details[open] div {
+	animation-name: invisiblyGrowFontSize, fadeIn;
+  animation-duration: 500ms, 200ms;
+  animation-delay: 0ms, 500ms;
+}
+
+@keyframes invisiblyShrinkFontSize {
+	0% {
+    font-size: 1em;
+    opacity: 0;
+	}
+	100% {
+    font-size: 0;
+    opacity: 0;
+	}
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+	100% {
+		opacity: 0;
+	}
+}
+
+details div {
+  animation-name: invisiblyShrinkFontSize, fadeOut;
+  animation-duration: 500ms, 200ms;
+  animation-delay: 0ms, 500ms;
+}

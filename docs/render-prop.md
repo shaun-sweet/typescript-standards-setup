@@ -8,7 +8,7 @@ Do not use an interface for initialState.  Always *infer* the type data from a v
 ### Examples
 
 <details><summary style="cursor: pointer;">Bad Example (click to see)</summary>
-
+<div>
 #### Bad
 
 ```tsx
@@ -18,9 +18,8 @@ interface NameProviderProps {
   children: (state: NameProviderState) => React.ReactNode; 
 }
 
-interface NameProviderState { // < no need to declare a state shape
- //when you can just declare the value and infer the type from the value
-  readonly name: string; // << no need for read only, that comes from the react types inherently
+interface NameProviderState { 
+  readonly name: string; 
 }
 
 export class NameProvider extends React.Component<NameProviderProps, NameProviderState> {
@@ -53,7 +52,7 @@ interface NameProviderState {
 - no need to declare a state shape
 - you can just declare the value and infer the type from the value
 - no need for read only, that comes from the react types inherently
-
+</div>
 </details>
 
 #### Good
@@ -69,7 +68,8 @@ const initialState = {
   name: "Ernie"
 }
 
-export class NameProvider extends React.Component<OwnProps, typeof initialState> {
+export class NameProvider extends React.Component<OwnProps, typoc
+eof initialState> {
   state = initialState;
 
   render() {

@@ -21,3 +21,6 @@ The idea for Typescript useage within the React ecosystem is simple.  *Prefer ty
 > "This guide is a living compendium documenting the most important patterns and recipes on how to use React (and its Ecosystem) in a functional style using TypeScript. It will help you make your code completely type-safe while focusing on inferring the types from implementation so there is less noise coming from excessive type annotations and it's easier to write and maintain correct types in the long run."
 
 Ok, we'll trust you're convinced!  Lets continue...
+
+
+> TODO: Add pros and cons and what it buys and affords you

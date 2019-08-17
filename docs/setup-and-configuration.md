@@ -75,7 +75,7 @@ tsify .
 
 This will change all your javascript files to `.tsx`.  I'd suggest manually changing as you go to .ts for non react specific javascript.  
 
-// TODO: add options for peice meal additions instead of converting the entire project
+> TODO: add options for peice meal additions instead of converting the entire project
 
 ## Installing common type definitions
 
