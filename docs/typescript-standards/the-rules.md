@@ -3,7 +3,7 @@ id: the-rules
 title: The rules
 ---
 
-## Enums
+## `enum`
 
 **Don't**
 
