@@ -76,7 +76,7 @@ const siteConfig = {
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
-    theme: "atom-one-dark"
+    // theme: "atom-one-dark"
   },
 
   // Add custom scripts here that would be placed in <script> tags.
@@ -86,7 +86,7 @@ const siteConfig = {
     "/js/code-block-buttons.js"
   ],
   stylesheets: ['/css/code-block-buttons.css', '/css/example-transition.css'],
-  // usePrism: ['tsx'],
+  usePrism: true,
   // On page navigation for the current documentation page.
   onPageNav: "separate",
   // No .html extensions for paths.
