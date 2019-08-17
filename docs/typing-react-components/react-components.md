@@ -3,7 +3,7 @@ id: react-components
 title: Typing Components
 sidebar_label: Typing Components
 ---
-
+> TODO: Pull this out into the cheatsheet detailing -> React Functional Component, React Class Component, with hooks etc.  In addition have proper tooling (vscode extension) to support these patterns
 ## Interfaces
 If type inference can be used, do not use an interface. This creates a better developer experience by providing better editor hints that contain the entire object shape
 
