@@ -41,7 +41,7 @@ class App extends Component {
 ```
 
 _Why?_
-- All members in a class a public by default which makes this pattern redundant
+- All members in a class are public by default which makes this pattern redundant
 - This is also not valid or idiomatic Javascript
 
 ## `private` accessor within react component
