@@ -1,6 +1,6 @@
 {
   "docs": {
-    "Typscript Standards": ["typescript-standards/overview"],
+    "Typscript Standards": ["typescript-standards/overview", "typescript-standards/the-rules"],
     "Getting Started": ["getting-started/setup-and-configuration", "getting-started/overriding-styled-components-theme"],
     "Typing React Components": ["typing-react-components/react-components"],
     "Advanced React Patterns": ["advanced-react-patterns/render-prop", "advanced-react-patterns/higher-order-components"],
