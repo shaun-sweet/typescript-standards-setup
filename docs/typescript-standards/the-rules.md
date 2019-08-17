@@ -217,7 +217,7 @@ _Why?_
 - You won’t be able to get original/clean version of your class.
 - TypeScript uses old version of decorator proposal which isn’t gonna be implemented in ECMAscript standard 🚨.
 - It adds additional runtime code and processing time execution to your app.
-- What is most important though, in terms of type checking within JSX, is, that decorators don’t extend class type definition. That means (in our example), that our Container component, will have absolutely no type information for consumer about added/removed props.
+- What is most important though, in terms of type checking within JSX, is, that decorators don’t extend class type definitions. That means (in our example), that our Container component, will have absolutely no type information for the consumer about added/removed props.
 
 ## Use lookup types for accessing component state/props
 
