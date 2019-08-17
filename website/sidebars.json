@@ -1,13 +1,10 @@
 {
   "docs": {
-    "Typscript Standards": ["overview"],
-    "Getting Started": ["setup-and-configuration", "overriding-styled-components-theme"],
-    "Typing React Components": ["react-components"],
-    "Advanced React Patterns": ["render-prop", "higher-order-components"],
-    "Redux Type Saftey": ["configure-store", "reducers", "redux-actions", "selectors", "react-redux-in-component"],
-    "FAQs": ["i-need-x-package"]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "Typscript Standards": ["typescript-standards/overview"],
+    "Getting Started": ["getting-started/setup-and-configuration", "getting-started/overriding-styled-components-theme"],
+    "Typing React Components": ["typing-react-components/react-components"],
+    "Advanced React Patterns": ["advanced-react-patterns/render-prop", "advanced-react-patterns/higher-order-components"],
+    "Redux Type Saftey": ["redux-type-saftey/configure-store", "redux-type-saftey/reducers", "redux-type-saftey/redux-actions", "redux-type-saftey/selectors", "redux-type-saftey/react-redux-in-component"],
+    "FAQs": ["faqs/i-need-x-package"]
   }
 }

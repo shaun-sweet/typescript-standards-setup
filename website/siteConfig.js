@@ -38,8 +38,8 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { doc: "overview", label: "Docs" },
-    { doc: "doc4", label: "Cheatsheet" },
+    { doc: "typescript-standards/overview", label: "Docs" },
+    { doc: "cheatsheet", label: "Cheatsheet" },
     { page: "help", label: "Help" }
   ],
 
