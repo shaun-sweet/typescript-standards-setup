@@ -83,7 +83,8 @@ const siteConfig = {
   scripts: [
     "https://buttons.github.io/buttons.js",
     "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js",
-    "/js/code-block-buttons.js"
+    "/js/code-block-buttons.js",
+    "/css/prism-onedark.css"
   ],
   stylesheets: ['/css/code-block-buttons.css', '/css/example-transition.css'],
   usePrism: true,
