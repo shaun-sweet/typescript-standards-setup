@@ -15,5 +15,8 @@
   "css-standards": {
     "CSS Standards": ["css-standards/overview"],
     "CSS Reset": ["css-standards/reset/overview"]
+  },
+  "csharp-standards": {
+    "C# Standards": ["csharp-standards/overview"]
   }
 }

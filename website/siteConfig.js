@@ -41,7 +41,7 @@ const siteConfig = {
     { doc: "typescript-standards/overview", label: "Typescript" },
     { doc: "javascript-standards/overview", label: "Javascript" },
     { doc: "css-standards/overview", label: "CSS" },
-    { doc: "cheatsheet", label: "C#" },
+    { doc: "csharp-standards/overview", label: "C#" },
     { page: "help", label: "Help" }
   ],
 
