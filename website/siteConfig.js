@@ -21,9 +21,9 @@ const users = [
 ];
 
 const siteConfig = {
-  title: "Typescript Standards", // Title for your website.
+  title: "Carvana Standards", // Title for your website.
   tagline: "A prescriptive guide for how to do things the Carvana way",
-  url: "https://your-docusaurus-test-site.com", // Your website URL
+  url: "https://carvanaassetsdev.blob.core.windows.net", // Your website URL
   baseUrl: "/", // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -36,10 +36,12 @@ const siteConfig = {
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
 
-  // For no header links in the top nav bar -> headerLinks: [],
+  // For no header links in the top nav bar -> headerLinks: [],hjbmnu
   headerLinks: [
-    { doc: "typescript-standards/overview", label: "Docs" },
-    { doc: "cheatsheet", label: "Cheatsheet" },
+    { doc: "typescript-standards/overview", label: "Typescript" },
+    { doc: "javascript-standards/overview", label: "Javascript" },
+    { doc: "css-standards/overview", label: "CSS" },
+    { doc: "cheatsheet", label: "C#" },
     { page: "help", label: "Help" }
   ],
 
@@ -83,10 +85,10 @@ const siteConfig = {
   scripts: [
     "https://buttons.github.io/buttons.js",
     "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js",
-    "/js/code-block-buttons.js",
-    "/css/prism-onedark.css"
+    "/js/code-block-buttons.js"
+    
   ],
-  stylesheets: ['/css/code-block-buttons.css', '/css/example-transition.css'],
+  stylesheets: ['/css/code-block-buttons.css', '/css/example-transition.css', "/css/prism-onedark.css"],
   usePrism: true,
   // On page navigation for the current documentation page.
   onPageNav: "separate",
@@ -105,11 +107,11 @@ const siteConfig = {
   enableUpdateBy: true,
 
   // Show documentation's last update time.
-  enableUpdateTime: true
+  enableUpdateTime: true,
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
+    repoUrl: 'https://github.com/facebook/test-site',
 };
 
 module.exports = siteConfig;

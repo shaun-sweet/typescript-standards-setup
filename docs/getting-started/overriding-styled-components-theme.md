@@ -15,7 +15,7 @@ Make a new file in this folder named `styled-components.d.ts`
 
 Inside here lets grab our theme type defs and override styled-components default theme
 
-```ts
+```typescript
 import {YourTheme} from '@your/theme'
 
 type ThemeInterface = typeof YourTheme;

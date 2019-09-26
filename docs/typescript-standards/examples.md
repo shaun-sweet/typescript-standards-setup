@@ -1,6 +1,6 @@
 ---
-id: the-rules
-title: The rules
+id: examples
+title: Examples
 ---
 
 ## `enum`

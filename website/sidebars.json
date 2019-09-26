@@ -1,10 +1,19 @@
 {
-  "docs": {
-    "Typscript Standards": ["typescript-standards/overview", "typescript-standards/the-rules"],
-    "Getting Started": ["getting-started/setup-and-configuration", "getting-started/overriding-styled-components-theme"],
-    "Typing React Components": ["typing-react-components/react-components"],
-    "Advanced React Patterns": ["advanced-react-patterns/render-prop", "advanced-react-patterns/higher-order-components"],
-    "Redux Type Saftey": ["redux-type-saftey/configure-store", "redux-type-saftey/reducers", "redux-type-saftey/redux-actions", "redux-type-saftey/selectors", "redux-type-saftey/react-redux-in-component"],
-    "FAQs": ["faqs/i-need-x-package"]
+  "typescript": {
+    "Typscript Standards": [
+      "typescript-standards/overview",
+      "typescript-standards/examples"
+    ]
+  },
+  "javascript-standards": {
+    "Javascript Standards": ["javascript-standards/overview"],
+    "Unit Testing": [
+      "javascript-standards/unit-testing/overview",
+      "javascript-standards/unit-testing/unit-testing-examples"
+    ]
+  },
+  "css-standards": {
+    "CSS Standards": ["css-standards/overview"],
+    "CSS Reset": ["css-standards/reset/overview"]
   }
 }

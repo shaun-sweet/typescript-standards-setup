@@ -20,7 +20,7 @@ We will start by going back to our `typings` folder at the root of our project.
 
 Make a new file named `modules.d.ts` and add the following
 
-```ts
+```typescript
 // typings/modules.d.ts
 declare module 'RootTypes';
 ```
@@ -31,7 +31,7 @@ Next we will override redux-thunk with a custom type to play nice.
 Again in the `typings` folder lets create a folder named `redux-thunk` and add a file in that folder `index.d.ts`
 
 Add to that file the following snippet:
-```ts
+```typescript
 
 import {
   Action,
@@ -103,7 +103,7 @@ Add another file named `rootAction.ts`
 
 This file *needs* to collect all the actions in your app.  So import every action in your app into this file and export them back out... Something like this for example:
 
-```ts
+```typescript
 import * as personalDetailsActions from "../tabs/PersonalDetails/ducks/actions";
 import { screenResize} from '../store/middleware/screenResize'
 
@@ -116,7 +116,7 @@ export default {
 
 Now that we have our `rootAction.ts` set-up lets go back to our `types.d.ts` in the store folder.  Add the following:
 
-```ts
+```typescript
 import { StateType, ActionType } from "typesafe-actions";
 
 
